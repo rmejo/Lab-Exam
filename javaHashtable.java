@@ -1,5 +1,4 @@
 import java.util.Hashtable;
-
 public class javaHashtable {
 	public static void main(String[] args) {
 		Hashtable<String, Integer> myHT = new Hashtable<>(); // TODO 1
