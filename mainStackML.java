@@ -16,7 +16,6 @@ class stackML{
 }
 
 public class mainStackML {
-
 	public static void main(String[] args) {
 		stackML mStack = new stackML(); // TODO 2
 		mStack.push("The Legend"); // TODO 3
@@ -24,5 +23,7 @@ public class mainStackML {
 		mStack.pop(); // TODO 5
 		mStack.printStack(); // TODO 6
 	}
-
 }
+
+# OUTPUT: 
+# [The Legend]
