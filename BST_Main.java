@@ -1,20 +1,12 @@
 class BSTNode {
 	String key;
 	BSTNode left, right;
-	public BSTNode(String k) {
-		key = k;
-		left = right = null;
-	}
+	public BSTNode(String k) { key = k; left = right = null;}
 }
-
 class BST_Tree {
 	BSTNode root;
-	BST_Tree() { 
-		root = null;
-	}
-	void insert(String key) {
-		root = insertRec(root, key);
-	}
+	BST_Tree() { root = null;}
+	void insert(String key) { root = insertRec(root, key); }
 	BSTNode insertRec(BSTNode root, String key) {
 		if (root == null) {
 			root = new BSTNode(key); // TODO 1
@@ -26,9 +18,7 @@ class BST_Tree {
 			root.right = insertRec(root.right, key); // TODO 2
 		return root;
 	}
-	void inorder() {
-		inorderRec(root);
-	}
+	void inorder() { inorderRec(root); }
 	void inorderRec(BSTNode root) {
 		if (root != null) {
 			inorderRec(root.left); // TODO 3
