@@ -15,7 +15,6 @@ class BST_Tree {
 	void insert(String key) {
 		root = insertRec(root, key);
 	}
-
 	BSTNode insertRec(BSTNode root, String key) {
 		if (root == null) {
 			root = new BSTNode(key); // TODO 1
@@ -27,11 +26,9 @@ class BST_Tree {
 			root.right = insertRec(root.right, key); // TODO 2
 		return root;
 	}
-
 	void inorder() {
 		inorderRec(root);
 	}
-
 	void inorderRec(BSTNode root) {
 		if (root != null) {
 			inorderRec(root.left); // TODO 3
@@ -40,9 +37,7 @@ class BST_Tree {
 		}
 	}
 }
-
 public class BST_Main {
-
 	public static void main(String[] args) {
 		BST_Tree myTree = new BST_Tree(); // TODO 6
 		System.out.println("Insert Grapes, Apples, Oranges ");
@@ -52,5 +47,8 @@ public class BST_Main {
 		System.out.println("In-order traversal: ");
 		myTree.inorder(); // TODO 10
 	}
-
 }
+# OUTPUT: 
+# Insert Grapes, Apples, Oranges 
+# In-order traversal: 
+# Apples Grapes Oranges 
